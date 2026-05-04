@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level Editor</title>
+
+    <style>
+        body {
+            margin: 0;
+            /* overflow: hidden; */
+            background: #1a1a1a;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #ui {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+
+            background: rgba(0,0,0,0.7);
+
+            color: white;
+
+            padding: 10px;
+
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="editor"></canvas>
+	<button id="download">Download</button>
+    <div id="ui">
+        Selected Tile:
+        <span id="selected">=</span>
+
+        <br><br>
+
+        1 Dirt (=)<br>
+        2 Moss (-)<br>
+        3 Crystal (*)<br>
+        4 Lava (^)<br>
+        5 Coin (C)<br>
+        6 Fake Block (?)<br>
+		7 Crystal (*)<br>
+		8 Magma Block (@)<br>
+		9 Full Moss (O)<br>
+		a bouncy (O)<br>
+		b ice (O)<br>
+		c cloud (O)<br>
+		d slate (O)<br>
+		e dark slate (O)<br>
+		f wet rock (O)<br>
+		g memory block (0)<br>
+		h blue speed (O)<br>
+		i red speed (O)<br>
+		j falling block (O)<br>
+		k geode (O)<br>
+		l gem (O)<br>
+		m ore (O)<br>
+		n purple crystal<br>
+		o mushroom (O)<br>
+		p roots (O)<br>
+		q spiky plant (O)<br>
+		r glow moss (O)<br>
+		s cracked stone (O)<br>
+		t vines (O)<br>
+		u pit (0)<br>
+		v sensetive block (0)<br>
+		w bamboo block (0)<br>
+		x cave grass (0)<br>
+         Empty Space
+		
+		
+		<textarea id="output"></textarea>
+    </div>
+
+    <script src="levels.js"></script>
+    <script src="editor.js"></script>
+
+</body>
+</html>
