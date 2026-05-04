@@ -8,3 +8,14 @@ function travelDimension() {
     window.location.href = "games/platformer/game.html";
   }, 601);
 }
+
+let keys = {}
+
+
+document.addEventListener("keydown", function(event) {
+
+    keys[event.key] = true
+
+})
+
+if (keys[esc]) {}
