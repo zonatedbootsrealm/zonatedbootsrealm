@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="design.css">
 </head>
 <body>
-
+  <audio id="portal" src="portalcue.mp3"></audio>
   <h1>enter the realm!</h1>
 
   <button onclick="travelDimension()">
@@ -14,8 +14,10 @@
 
  <script>
 function travelDimension() {
+  const speedfall = document.getElementById("portal")
   document.body.classList.add("fade-out");
   document.getElementById("overlay").style.opacity = "1";
+  portal.play()
 
   setTimeout(() => {
     window.location.href = "games/platformer/game.html";
