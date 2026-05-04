@@ -12,13 +12,14 @@
   travel dimension!
 </button>
 
-  <script>
+ <script>
 function travelDimension() {
   document.body.classList.add("fade-out");
+  document.getElementById("overlay").style.opacity = "1";
 
   setTimeout(() => {
     window.location.href = "games/platformer/game.html";
-  }, 800); // slightly longer than transition
+  }, 800);
 }
 </script>
 
