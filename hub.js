@@ -1,4 +1,5 @@
 function travelDimension(place) {
+  console.log("function works");
   const portal = document.getElementById("portal")
   document.body.classList.add("fade-out");
   document.getElementById("overlay").style.opacity = "1";
