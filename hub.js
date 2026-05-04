@@ -9,13 +9,10 @@ function travelDimension() {
   }, 601);
 }
 
-let keys = {}
-
-
 document.addEventListener("keydown", function(event) {
 
-    keys[event.key] = true
+  if (event.key === "Escape") {
+    window.location.href = "index.html";
+  }
 
-})
-
-if (keys[esc]) {}
+});
