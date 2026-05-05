@@ -4,7 +4,9 @@ function travelDimension(place) {
 
   //portal.play();
 
-  window.location.href = place;
+  setTimeout(() => {
+    window.location.href = place;
+  }, 600);
 }
 
 document.addEventListener("keydown", function(event) {
