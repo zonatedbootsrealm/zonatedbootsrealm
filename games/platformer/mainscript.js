@@ -135,7 +135,11 @@ function gameLoop() {
     requestAnimationFrame(gameLoop)
 }
 
-
-
+let savedCamX = Number(localStorage.getItem("CameraX"))
+let savedCamY = Number(localStorage.getItem("CameraY"))
+if (savedCamX) {
+	camera.x = savedCamX
+	camera.y = savedCamY
+}
 
 gameLoop()
