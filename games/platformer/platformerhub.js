@@ -15,7 +15,7 @@ function travelDimension(place) {
 document.addEventListener("keydown", function(event) {
 
   if (event.key === "Escape") {
-    travelDimension("index.html")
+    travelDimension("../../index.html")
   }
 
 });
