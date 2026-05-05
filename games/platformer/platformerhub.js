@@ -6,7 +6,7 @@ function travelDimension(place) {
 
   setTimeout(() => {
     window.location.href = place;
-  }, 600);
+  }, 5);
 }
 
 document.addEventListener("keydown", function(event) {
