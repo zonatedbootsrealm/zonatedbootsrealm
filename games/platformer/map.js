@@ -84,8 +84,15 @@ for (let row = 0; row < level.length; row++) {
 	        }
 	
 	        if (tile === "P") {
-	            player.x = letter * tileSize
-	            player.y = row * tileSize
+				let savedX = Number(localStorage.getItem("playerX"))
+				let savedY = Number(localStorage.getItem("playerY"))
+				if (!savedX) {
+					player.x = letter * tileSize
+	            	player.y = row * tileSize
+				} else if (savedX) {
+					player.x = savedX
+					player.y = savedY
+				}
 	        }
 			
 			if (tile === "C") {
