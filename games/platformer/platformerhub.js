@@ -1,8 +1,8 @@
 //this function runs and loads properly (tested)
 function travelDimension(place) {
-  const portal = document.getElementById("portal");
+  //const portal = document.getElementById("portal");
 
-  portal.play();
+  //portal.play();
 
   window.location.href = place;
 }
