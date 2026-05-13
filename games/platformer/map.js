@@ -60,6 +60,11 @@ const vines = []
 const bambooBlocks = []
 const trees1 = []
 const caveGrass = []
+const sand = []
+const softSand = []
+const stoneA = []
+const stoneB = []
+const stoneC = []
 
 const tileSize = 50
 
@@ -659,34 +664,96 @@ for (let row = 0; row < level.length; row++) {
 
 			}
 
+			if (tile === "y") {
+    			sand.push({
+    			    x: letter * tileSize,
+    			    y: row * tileSize,
+    			    width: tileSize,
+    			    height: tileSize,
+			        base: "#d8c07a",
+			        top: "#f1de9a",
+			        stripe: "#b79b50"
+			    })
+			}
+			
+			if (tile === "z") {
+			    softSand.push({
+			        x: letter * tileSize,
+			        y: row * tileSize,
+			        width: tileSize,
+			        height: tileSize,
+			        base: "#cbb36c",
+			        top: "#e7d38c",
+			        stripe: "#a58b47"
+			    })
+			}
+			
+			if (tile === "[") {
+			    stoneA.push({
+			        x: letter * tileSize,
+			        y: row * tileSize,
+			        width: tileSize,
+			        height: tileSize,
+			        base: "#6e7580",
+			        top: "#8a929e",
+			        shadow: "#525861"
+			    })
+			}
+
+			if (tile === "]") {
+			    stoneB.push({
+			        x: letter * tileSize,
+			        y: row * tileSize,
+			        width: tileSize,
+			        height: tileSize,
+			        base: "#545b66",
+			        top: "#737b88",
+			        shadow: "#3e444e"
+			    })
+			}
+
+			if (tile === ";") {
+    			stoneC.push({
+        			x: letter * tileSize,
+        			y: row * tileSize,
+        			width: tileSize,
+        			height: tileSize,
+    			    base: "#414754",
+    			    top: "#606775",
+    			    crack: "#2a2f38"
+    			})
+			}			
+
 	}
 
 }
 
 const allSolids = [
-
     ...map,
     ...moss,
     ...fullmoss,
     ...pits,
     ...slate,
-
     ...darkstone,
     ...wetstone,
     ...crystal,
     ...lavarock,
     ...lava,
-	...memoryBlock,
-	...bounceBlock,
-	...fallingBlock,
-	...cloudBlock,
-	...iceBlock,
-	...speedPad,
-	...geode,
-	...gem,
-	...ore,
-	...crackedStone,
-	...glowMoss,
-	...caveGrass
-
+    ...memoryBlock,
+    ...bounceBlock,
+    ...fallingBlock,
+    ...cloudBlock,
+    ...iceBlock,
+    ...speedPad,
+    ...geode,
+    ...gem,
+    ...ore,
+    ...crackedStone,
+    ...glowMoss,
+    ...caveGrass,
+    ...sand,
+    ...softSand,
+    ...stoneA,
+    ...stoneB,
+    ...stoneC
 ]
