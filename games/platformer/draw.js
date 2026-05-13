@@ -1023,3 +1023,157 @@ function DrawCaveGrass () {
 		
 	}
 }
+
+function DrawSand() {
+    for (let b of sand) {
+        ctx.fillStyle = b.base
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            b.height
+        )
+
+        ctx.fillStyle = b.top
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            12
+        )
+
+        ctx.fillStyle = b.stripe
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y + 24 - camera.y,
+            b.width,
+            6
+        )
+    }
+}
+
+function DrawSoftSand() {
+    for (let b of softSand) {
+        ctx.fillStyle = b.base
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            b.height
+        )
+
+        ctx.fillStyle = b.top
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            14
+        )
+
+        ctx.fillStyle = b.stripe
+        ctx.fillRect(
+            b.x - camera.x + 6,
+            b.y + 20 - camera.y,
+            b.width - 12,
+            5
+        )
+
+        ctx.fillRect(
+            b.x - camera.x + 10,
+            b.y + 32 - camera.y,
+            b.width - 20,
+            4
+        )
+    }
+}
+
+function DrawStoneA() {
+    for (let b of stoneA) {
+        ctx.fillStyle = b.base
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            b.height
+        )
+
+        ctx.fillStyle = b.top
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            10
+        )
+
+        ctx.fillStyle = b.shadow
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y + 34 - camera.y,
+            b.width,
+            16
+        )
+    }
+}
+
+function DrawStoneB() {
+    for (let b of stoneB) {
+        ctx.fillStyle = b.base
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            b.height
+        )
+
+        ctx.fillStyle = b.top
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            8
+        )
+
+        ctx.fillStyle = b.shadow
+        ctx.fillRect(
+            b.x - camera.x + 8,
+            b.y + 12 - camera.y,
+            8,
+            28
+        )
+
+        ctx.fillRect(
+            b.x - camera.x + 30,
+            b.y + 6 - camera.y,
+            6,
+            34
+        )
+    }
+}
+
+function DrawStoneC() {
+    for (let b of stoneC) {
+        ctx.fillStyle = b.base
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            b.height
+        )
+
+        ctx.fillStyle = b.top
+        ctx.fillRect(
+            b.x - camera.x,
+            b.y - camera.y,
+            b.width,
+            9
+        )
+
+        ctx.strokeStyle = b.crack
+        ctx.beginPath()
+        ctx.moveTo(b.x + 10 - camera.x, b.y + 8 - camera.y)
+        ctx.lineTo(b.x + 24 - camera.x, b.y + 22 - camera.y)
+        ctx.lineTo(b.x + 15 - camera.x, b.y + 40 - camera.y)
+        ctx.stroke()
+    }
+}
+
