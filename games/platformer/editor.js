@@ -8,6 +8,7 @@ canvas.height = window.innerHeight
 
 const tileSize = 50
 
+let level = [...stage1]
 let selectedTile = "="
 
 const selectedText = document.getElementById("selected")
