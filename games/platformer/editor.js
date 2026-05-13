@@ -103,6 +103,11 @@ document.addEventListener("keydown", function(event) {
 	if (event.key === "v") selectedTile = "f"
 	if (event.key === "w") selectedTile = "A"
 	if (event.key === "x") selectedTile = "("
+	if (event.key === "y") selectedTile = "y"
+	if (event.key === "z") selectedTile = "z"
+	if (event.key === "[") selectedTile = "["
+	if (event.key === "]") selectedTile = "]"
+	if (event.key === ";") selectedTile = ";"
 
     selectedText.textContent = selectedTile
 
@@ -177,6 +182,11 @@ if (tile === "~") color = "#4d4949"
 if (tile === "f") color = "#a19452"
 if (tile === "A") color = "#9cd13b"
 if (tile === "(") color = "#a1fa4d"
+if (tile === "y") color = "#d8c07a"
+if (tile === "z") color = "#cbb36c"
+if (tile === "[") color = "#6e7580"
+if (tile === "]") color = "#545b66"
+if (tile === ";") color = "#414754"
 
             if (color) {
 
