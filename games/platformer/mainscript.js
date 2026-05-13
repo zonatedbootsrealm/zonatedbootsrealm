@@ -64,6 +64,11 @@ function DrawEverything() {
 	DrawBambooBlock()
 	DrawTrees1()
 	DrawCaveGrass()
+	DrawSand()
+	DrawSoftSand()
+	DrawStoneA()
+	DrawStoneB()
+	DrawStoneC()
 }
 
 function UpdateEverything() {
