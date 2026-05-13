@@ -1,4 +1,4 @@
-const stage1 = [
+const level = [
 "                             M                                           fffffffffffffffffffffffffffffffffff                            ",
 "                  LLLLL      M                                                                                                          ",
 "                             M                                                                                                          ",
@@ -34,11 +34,11 @@ const stage1 = [
 "      V V        V              O*CC+**OO    >>I>>>>I   LXX####XX(   (#G##Lf               X       X   X                                ",
 "      V V                       OX***WWO    I**>>>I*     LLL#G##X( !(X###?Xf                       XX XX                                ",
 "      V                          YOOOOO      I ***I         LL###X((X####C#                         XXX                                ",
-"                                             I II     %!      ##G#XX##G##C#      =======                                               ",
-"                                               I  I  %#%      L##########*#!                                                            ",
-"                                               I     LLL       LL#G#####OO#(                         =======================          ======= ",
-"   M  MMMM                                               !       LLLL###~~~X                    T                C            = ",
-"   MCCCCCM                           M         C        K#### !      L~~~~~#            !      OW                             = ",
+"                                        zzz  I II     %!      ##G#XX##G##C#      =======                                               ",
+"                                        yyy    I  I  %#%      L##########*#!                                                            ",
+"                                        [[[    I     LLL       LL#G#####OO#(                         =======================          ======= ",
+"   M  MMMM                              ]]]              !       LLLL###~~~X                    T                C            = ",
+"   MCCCCCM                           M  ;;;    C        K#### !      L~~~~~#            !      OW                             = ",
 "   MCCCCCM    <<<<<      >>>>>>>>    M               LL#@@@#~###LL    L~~~~L            WOOTWOW-X  +++                        = ",
 "   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM        =====LL !#@^^#~~C        LOOL             W-WW--X##  +++                        = ",
 "                                                YY    #@^^^####    O          ---    LLL GXXR=#             ff                         = ",
@@ -61,5 +61,3 @@ const stage1 = [
 "====>>>>I>III>I>>>*########%XXXX*XX*I    ----===########   CCCCCCCCC XQ##XQ*   Y O-===---==--OCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC ======== ",
 "========================================================================================================================================"
 ]
-
-const stage2 = []
