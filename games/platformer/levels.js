@@ -1,4 +1,4 @@
-const level = [
+const stage1 = [
 "                             M                                           fffffffffffffffffffffffffffffffffff                            ",
 "                  LLLLL      M                                                                                                          ",
 "                             M                                                                                                          ",
@@ -61,3 +61,5 @@ const level = [
 "====>>>>I>III>I>>>*########%XXXX*XX*I    ----===########   CCCCCCCCC XQ##XQ*   Y O-===---==--OCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC ======== ",
 "========================================================================================================================================"
 ]
+
+const stage2 = []
